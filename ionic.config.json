@@ -1,0 +1,7 @@
+{
+  "name": "leb-weather",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
