@@ -1,0 +1,40 @@
+page-forcast {
+
+    ion-content {
+        padding: 0px;
+        background-size: cover;
+        background-color: lightskyblue !important;
+    }
+
+    ion-item {
+        background-color: transparent !important;
+    }
+
+    .forcast {
+        flex-wrap: wrap;
+        flex-direction: column ;
+        column-count: 2;
+        column-rule: 1px solid white;
+    }
+
+    .day {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .time {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: white ;
+        margin-left: 10px;
+    }
+
+    .temp {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white ;
+        margin-left: 10px;
+    }
+}

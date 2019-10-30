@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lebanon Weather</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="component-id" class="">
+  <ion-item>
+    <ion-label>Choose City</ion-label>
+    <ion-select [(ngModel)]="chooseCity" (ionChange)="optionsFn();">
+      <ion-option value="Beirut">Beirut</ion-option>
+      <ion-option value="Matn">Matn</ion-option>
+      <ion-option value="Keserouane">Keserouane</ion-option>
+      <ion-option value="Zahle">Zahle</ion-option>
+      <ion-option value="Tripoly">Tripoly</ion-option>
+      <ion-option value="Sidon">Sidon</ion-option>
+      <ion-option value="Chouf">Chouf</ion-option>
+      <ion-option value="Jbeil">Jbeil</ion-option>    
+    </ion-select>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let item of responseArray">
+      <div class="day">{{item.d}}</div>
+      <div class="forcast">
+        <div class="time">{{item.time0}} </div>
+        <div class="temp">{{item.temp0}} ° </div>
+        <div class="time">{{item.time1}}</div>
+        <div class="temp">{{item.temp1}} ° </div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

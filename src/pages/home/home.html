@@ -3,16 +3,23 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Lebanon Weather</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content padding id="component-id" class="">
+  <div class="center">
+    <div class="date">{{todayDate}}</div>
+    <div class="location-temperature">
+      <div class="location">{{city}}, {{country}}</div>        
+      <div class="temperature">{{temp}}°</div>
+    </div> 
+    <div class="state">{{status}}</div>         
+  </div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div class="details">
+      <div class="content">Wind Speed: {{wind}} m/s</div>
+      <div class="content">Humidity: {{humidity}} %</div>
+      <div class="content">Air Pressure: {{pressure}} hPa</div>
+  </div>   
 </ion-content>
